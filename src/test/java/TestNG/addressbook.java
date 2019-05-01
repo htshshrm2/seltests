@@ -13,7 +13,7 @@ public class addressbook {
 	WebDriver driver;
 	@BeforeMethod()
 	public void launch() {
-		 System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver","/usr/lib/chromium-browser/chromedriver");
 	      driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
